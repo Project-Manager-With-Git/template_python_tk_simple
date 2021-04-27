@@ -1,0 +1,15 @@
+from app import Application
+
+
+def main():
+    app = Application()
+    # 设置窗口标题:
+    app.master.title('{{ app_name }}')
+
+    app.master.geometry("600x400+100+400")  # 长x宽+x+y
+    # 主消息循环:
+    app.mainloop()
+
+
+if __name__ == "__main__":
+    main()
